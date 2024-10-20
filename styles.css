@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Modern Normalize */
+:root {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: #333; 
+}
+  
+.nav-links, .auth-links {
+    list-style-type: none;
+    display: flex;
+}
+  
+.nav-links li, .auth-links li {
+    margin-right: 20px; 
+}
+  
+.nav-links a, .auth-links a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 15px;
+}
+  
+.nav-links a:hover, .auth-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.body {
+    font-size: xx-large;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex: 1; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0; 
+    color: #fff;
+}
+
+/* Remove the .container display property */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ensure the container fills the available height */
+}
